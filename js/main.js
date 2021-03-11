@@ -38,3 +38,12 @@ var timevar = setInterval(huidigeTijd, 1000);
 var dagenVanDeWeek = new Array('Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag');
 // geeft dagen van de week weer
 document.getElementById('tijdNY').innerHTML =  dagenVanDeWeek[today.getDay()];
+
+var tijdNu = new Date();
+var dagEnNacht = tijdNu.getHours();
+
+if (dagEnNacht > 6 && dagEnNacht <= 18) {
+  document.getElementById("afb").src = "styles/sun.png";
+} else {
+  document.getElementById("afb").src = "styles/moon_PNG36.png";
+}

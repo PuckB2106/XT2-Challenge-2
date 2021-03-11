@@ -58,6 +58,11 @@ body{
   padding: 10%;
 }
 
+#afb{
+  width: 300px;
+
+}
+
 div{
   border-style: solid;
   border-color: white;
