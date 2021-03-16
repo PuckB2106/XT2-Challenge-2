@@ -1,0 +1,25 @@
+@font-face {
+    font-family: D-DIN;
+    src: url('d-din/D-DIN.otf') format("opentype");;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #1F2833;
+}
+
+h1{
+  font-family: D-DIN;
+  color: white;
+  text-align: center;
+}
+
+p{
+  font-family: D-DIN;
+  color: white;
+  text-align: center;
+}

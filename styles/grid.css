@@ -1,0 +1,13 @@
+.grid-container{
+  display: grid;
+  grid-gap: 3.6vw;
+  grid-template-columns:1fr;
+
+  grid-template-areas:
+ "klok-Amsterdam"
+ "klok-London"
+ "klok-NewYork"
+ "klok-Afbeelding"
+ "klok-dag-nacht";
+
+}
