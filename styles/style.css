@@ -50,6 +50,14 @@ body{
   padding: 10%;
 }
 
+#tijdNY{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: D-DIN;
+  padding: 10%;
+}
+
 div{
   border-style: solid;
   border-color: white;

@@ -25,3 +25,16 @@ function huidigeTijd(){
 
 //variabele tellen mee
 var timevar = setInterval(huidigeTijd, 1000);
+
+// function myFunction() {
+//   var today = new Date();
+//
+// var dagenVanDeWeek = new Array('maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag');
+//
+// var n = dagenVanDeWeek[today.getday()];
+// document.getElementById('tijdNY').innerHTML = n;
+// }
+
+var dagenVanDeWeek = new Array('Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Donderdag', 'Vrijdag', 'Zaterdag');
+// geeft dagen van de week weer
+document.getElementById('tijdNY').innerHTML =  dagenVanDeWeek[today.getDay()];
