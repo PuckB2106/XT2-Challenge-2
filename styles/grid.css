@@ -1,8 +1,7 @@
 .grid-container{
   display: grid;
-  grid-gap: 3.6vw;
   grid-template-columns:1fr;
-  
+
   grid-template-areas:
   "logo-tekst"
  "klok-Amsterdam"
@@ -12,8 +11,6 @@
  "klok-dag-nacht";
 
 }
-
-
 
 .logo-tekst{
   grid-area: logo-tekst;
@@ -36,6 +33,47 @@
   grid-area: klok-Afbeelding;
 }
 
-.klok-dag-nacht{
-  grid-area: klok-dag-nacht;
+@media only screen and (min-width: 750px) and (max-width:1279px){
+ .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas:
+    "logo-tekst logo-tekst"
+    "klok-Amsterdam klok-Amsterdam"
+    "klok-Londen klok-NewYork"
+    "klok-Afbeelding klok-Afbeelding";
+
+  }
+
+}
+
+@media only screen and (min-width: 1279px) and (max-width:1440px){
+ .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:
+    "logo-tekst logo-tekst logo-tekst"
+    "klok-Amsterdam klok-Amsterdam klok-Amsterdam"
+    "klok-Londen klok-NewYork klok-NewYork"
+    "klok-Afbeelding klok-Afbeelding";
+
+  }
+
+}
+
+@media only screen and (min-width: 1920px){
+ .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    grid-template-areas:
+    "logo-tekst logo-tekst logo-tekst logo-tekst"
+    "klok-Amsterdam klok-Amsterdam klok-Amsterdam klok-Amsterdam"
+    "klok-Londen klok-NewYork klok-NewYork klok-NewYork"
+    "klok-Afbeelding klok-Afbeelding klok-Afbeelding klok-Afbeelding";
+
+  }
+
 }

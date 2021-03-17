@@ -43,7 +43,7 @@ var tijdNu = new Date();
 var dagEnNacht = tijdNu.getHours();
 
 if (dagEnNacht > 6 && dagEnNacht <= 18) {
-  document.getElementById("afb").src = "styles/sun.png";
+  document.getElementById("afb").src = "styles/zon.png";
 } else {
   document.getElementById("afb").src = "styles/moon_PNG36.png";
 }
