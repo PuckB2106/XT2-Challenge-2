@@ -1,25 +1,72 @@
 @font-face {
     font-family: D-DIN;
-    src: url('d-din/D-DIN.otf') format("opentype");;
+    src: url('fonts/d-din/D-DIN.otf') format("opentype");;
 }
 
-*{
+/* *{
   margin: 0;
   padding: 0;
-}
+} */
 
 body{
   background-color: #1F2833;
 }
 
-h1{
+.logo{
+  width: 60%;
+  display: block;
+  margin-left: 25%;
+  margin-right: 50%;
+  margin-top: 8%;
+}
+
+.logo-tekst{
+  border-style: solid;
+  border-color: white;
+}
+
+.tekst{
+  margin-top: 8%;
+  margin-bottom: 1%;
+}
+
+.tekst-2{
+  margin-bottom: 8%;
+}
+
+#tijdA{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: D-DIN;
+  padding: 10%;
+}
+
+#tijdL{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: D-DIN;
+  padding: 10%;
+}
+
+div{
+  border-style: solid;
+  border-color: white;
+  border-width: thin;
+}
+
+h2{
   font-family: D-DIN;
   color: white;
   text-align: center;
+  margin-top: 5%;
+  font-size: 21px;
 }
 
 p{
   font-family: D-DIN;
   color: white;
   text-align: center;
+  font-size: 15px;
 }

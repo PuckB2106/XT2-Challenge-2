@@ -2,12 +2,40 @@
   display: grid;
   grid-gap: 3.6vw;
   grid-template-columns:1fr;
-
+  
   grid-template-areas:
+  "logo-tekst"
  "klok-Amsterdam"
  "klok-London"
  "klok-NewYork"
  "klok-Afbeelding"
  "klok-dag-nacht";
 
+}
+
+
+
+.logo-tekst{
+  grid-area: logo-tekst;
+}
+
+.klok-Amsterdam{
+  grid-area: klok-Amsterdam;
+
+}
+
+.klok-London{
+  grid-area: klok-London;
+}
+
+.klok-NewYork{
+  grid-area: klok-NewYork;
+}
+
+.klok-Afbeelding{
+  grid-area: klok-Afbeelding;
+}
+
+.klok-dag-nacht{
+  grid-area: klok-dag-nacht;
 }
