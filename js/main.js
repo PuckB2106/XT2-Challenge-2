@@ -39,6 +39,7 @@ var dagenVanDeWeek = new Array('Zondag', 'Maandag', 'Dinsdag', 'Woensdag', 'Dond
 // geeft dagen van de week weer
 document.getElementById('tijdNY').innerHTML =  dagenVanDeWeek[today.getDay()];
 
+// zorgt voor het veranderen van de afbeelding in een zon of maan
 var tijdNu = new Date();
 var dagEnNacht = tijdNu.getHours();
 
@@ -48,6 +49,7 @@ if (dagEnNacht > 6 && dagEnNacht <= 18) {
   document.getElementById("afb").src = "styles/moon_PNG36.png";
 }
 
+// zorgt ervoor dat de achtergrondkleur veranderd
 var t = new Date().getHours();
 if (t > 6 && t < 18) {
     document.body.style.backgroundColor="#357DED";
