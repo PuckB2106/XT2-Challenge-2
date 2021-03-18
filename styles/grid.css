@@ -1,6 +1,6 @@
-.grid-container{
+.container{
   display: grid;
-  grid-template-columns:1fr;
+  grid-template-columns: 1fr;
 
   grid-template-areas:
   "logo-tekst"
@@ -33,30 +33,30 @@
   grid-area: klok-Afbeelding;
 }
 
-@media only screen and (min-width: 750px) and (max-width:1279px){
- .grid-container {
+@media only screen and (min-width: 750px){
+ .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
     grid-template-areas:
     "logo-tekst logo-tekst"
     "klok-Amsterdam klok-Amsterdam"
-    "klok-Londen klok-NewYork"
+    "klok-London klok-NewYork"
     "klok-Afbeelding klok-Afbeelding";
 
   }
 
 }
 
-@media only screen and (min-width: 1279px) and (max-width:1440px){
- .grid-container {
+@media only screen and (min-width: 1279px){
+ .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
     grid-template-areas:
     "logo-tekst logo-tekst logo-tekst"
-    "klok-Amsterdam klok-Amsterdam klok-Amsterdam"
-    "klok-Londen klok-NewYork klok-NewYork"
+    "klok-Amsterdam klok-Amsterdam klok-NewYork"
+    "klok-London klok-London klok-London"
     "klok-Afbeelding klok-Afbeelding klok-Afbeelding";
 
 
@@ -65,14 +65,13 @@
 }
 
 @media only screen and (min-width: 1920px){
- .grid-container {
+ .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 
     grid-template-areas:
     "logo-tekst logo-tekst logo-tekst logo-tekst"
-    "klok-Amsterdam klok-Amsterdam klok-Amsterdam klok-Amsterdam"
-    "klok-Londen klok-NewYork klok-NewYork klok-NewYork"
+    "klok-Amsterdam klok-Amsterdam klok-London klok-NewYork"
     "klok-Afbeelding klok-Afbeelding klok-Afbeelding klok-Afbeelding";
 
   }

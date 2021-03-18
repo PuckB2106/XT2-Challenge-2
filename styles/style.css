@@ -1,7 +1,4 @@
-@font-face {
-    font-family: D-DIN;
-    src: url('fonts/d-din/D-DIN.otf') format("opentype");;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* *{
   margin: 0;
@@ -38,7 +35,7 @@ body{
   color: white;
   text-align: center;
   font-size: 50px;
-  font-family: D-DIN;
+  font-family: Roboto;
   padding: 10%;
 }
 
@@ -46,7 +43,7 @@ body{
   color: white;
   text-align: center;
   font-size: 50px;
-  font-family: D-DIN;
+  font-family: Roboto;
   padding: 10%;
 }
 
@@ -54,14 +51,14 @@ body{
   color: white;
   text-align: center;
   font-size: 50px;
-  font-family: D-DIN;
+  font-family: Roboto;
   padding: 10%;
 }
 
 #afb{
   width: 90vw;
-  padding-left: 2vh;
-  padding-top: 2vh;
+  padding-left: 5%;
+  padding-top: 10%;
 }
 
 
@@ -72,7 +69,7 @@ div{
 }
 
 h2{
-  font-family: D-DIN;
+  font-family: Roboto;
   color: white;
   text-align: center;
   margin-top: 5%;
@@ -80,7 +77,7 @@ h2{
 }
 
 p{
-  font-family: D-DIN;
+  font-family: Roboto;
   color: white;
   text-align: center;
   font-size: 15px;

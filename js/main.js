@@ -14,7 +14,7 @@ function huidigeTijd(){
 
   document.getElementById('tijdL').innerHTML = today.getHours() + ':' +  minutes +  ':' + seconds ;
 
-  // functie voegt 0 toe
+  // functie voegt 0 toe aan het getal
   function addLeadingZero(number) {
       if(number < 10){
           return '0' + number;
@@ -46,4 +46,13 @@ if (dagEnNacht > 6 && dagEnNacht <= 18) {
   document.getElementById("afb").src = "styles/zon.png";
 } else {
   document.getElementById("afb").src = "styles/moon_PNG36.png";
+}
+
+var t = new Date().getHours();
+if (t > 6 && t < 18) {
+    document.body.style.backgroundColor="#357DED";
+} else if (t > 18 && t < 6) {
+    document.body.style.backgroundColor="#1F2833";
+} else {
+    document.body.style.backgroundColor="#1F2833";
 }
