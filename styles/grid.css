@@ -7,8 +7,8 @@
  "klok-Amsterdam"
  "klok-London"
  "klok-NewYork"
- "klok-Afbeelding"
- "klok-dag-nacht";
+ "animatie"
+ "klok-Afbeelding";
 
 }
 
@@ -29,8 +29,17 @@
   grid-area: klok-NewYork;
 }
 
+.animatie{
+  grid-area: animatie;
+}
+
 .klok-Afbeelding{
   grid-area: klok-Afbeelding;
+  display: flex;
+}
+
+#afb{
+  justify-content: center;
 }
 
 /* ipad */
@@ -42,9 +51,9 @@
 
     grid-template-areas:
     "logo-tekst logo-tekst"
-    "klok-Amsterdam klok-Amsterdam"
-    "klok-London klok-NewYork"
-    "klok-Afbeelding klok-Afbeelding";
+    "klok-Amsterdam klok-London"
+    "klok-NewYork klok-NewYork"
+    "animatie klok-Afbeelding";
 
   }
 
@@ -56,11 +65,6 @@
     font-size: 25px;
   }
 
-  #afb{
-    width: 60vh;
-    padding-left: 25%;
-    padding-top: 2%;
-  }
 
 }
 
@@ -71,8 +75,8 @@
 
     grid-template-areas:
     "logo-tekst logo-tekst logo-tekst"
-    "klok-Amsterdam klok-Amsterdam klok-NewYork"
-    "klok-London klok-London klok-London"
+    "klok-Amsterdam klok-NewYork klok-London"
+    "animatie animatie animatie"
     "klok-Afbeelding klok-Afbeelding klok-Afbeelding";
 
 
@@ -97,12 +101,6 @@
     padding-top: 82px;
   }
 
-  #afb{
-    width: 100vh;
-    padding-left: 26%;
-    padding-top: 1%;
-  }
-
 
 }
 
@@ -114,7 +112,7 @@
     grid-template-areas:
     "logo-tekst logo-tekst logo-tekst logo-tekst"
     "klok-Amsterdam klok-Amsterdam klok-London klok-NewYork"
-    "klok-Afbeelding klok-Afbeelding klok-Afbeelding klok-Afbeelding";
+    "animatie animatie klok-Afbeelding klok-Afbeelding";
 
   }
 
@@ -132,18 +130,11 @@
 
   #tijdL{
     font-size: 80px;
-    padding-top: 90px;
   }
 
   #tijdNY{
     font-size: 80px;
     padding-top: 85px;
-  }
-
-  #afb{
-    width: 100vh;
-    padding-left: 26%;
-    padding-top: 1%;
   }
 
 }
