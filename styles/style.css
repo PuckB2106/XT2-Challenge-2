@@ -55,21 +55,21 @@ body{
   padding: 10%;
 }
 
-/* #ani-afb {
-	animation: 1000ms pulsate infinite alternate ease-in-out;
+#ani-afb {
+  width: 20%;
+	position: absolute;
+	top: 80px;
+  animation-fill-mode: forwards;
+	animation: 800ms bewegen infinite alternate ease-in;
 }
 
-@keyframes pulsate {
+@keyframes bewegen {
   0% {
-  	top: 90px;
+  	top: 10px;
   }
-  100% {
-  	top: 75px;
+	100% {
+  	top: 30px;
   }
-} */
-
-#ani-afb{
-  width: 100%;
 }
 
 #afb{

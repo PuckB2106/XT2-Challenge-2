@@ -31,11 +31,16 @@
 
 .animatie{
   grid-area: animatie;
+  display: flex;
 }
 
 .klok-Afbeelding{
   grid-area: klok-Afbeelding;
   display: flex;
+}
+
+#ani-afb{
+  justify-content: center;
 }
 
 #afb{
@@ -63,6 +68,11 @@
 
   p{
     font-size: 25px;
+  }
+
+  #ani-afb{
+    margin-top: 115%;
+    margin-left: 5%;
   }
 
   #afb{
@@ -111,7 +121,8 @@
 
   #ani-afb{
     width: 20%;
-    margin-left: 40%;
+    margin-top: 10%;
+    margin-left: 75%;
   }
 
   #afb{
@@ -147,6 +158,7 @@
   }
 
   #tijdL{
+    padding-top: 25%;
     font-size: 80px;
   }
 
@@ -156,14 +168,15 @@
   }
 
   #ani-afb{
-    width: 50%;
-    margin-left: 40%;
+    width: 20%;
+    margin-top: 52%;
+    margin-left: 15%;
   }
 
   #afb{
-    width: 40%;
-    margin-top: 0;
-    margin-left: 30%;
+    width: 500px;
+    margin-top: 15%;
+    margin-left: 25%;
   }
 
 }
