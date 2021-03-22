@@ -3,7 +3,7 @@
   grid-template-columns: 1fr;
 
   grid-template-areas:
-  "logo-tekst"
+ "logo-tekst"
  "klok-Amsterdam"
  "klok-London"
  "klok-NewYork"
@@ -31,11 +31,16 @@
 
 .animatie{
   grid-area: animatie;
+  display: flex;
 }
 
 .klok-Afbeelding{
   grid-area: klok-Afbeelding;
   display: flex;
+}
+
+#ani-afb{
+  justify-content: center;
 }
 
 #afb{

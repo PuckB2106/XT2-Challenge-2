@@ -55,6 +55,19 @@ body{
   padding: 10%;
 }
 
+#ani-afb {
+	animation: 1000ms pulsate infinite alternate ease-in-out;
+}
+
+@keyframes pulsate {
+  0% {
+  	top: 90px;
+  }
+  100% {
+  	top: 75px;
+  }
+}
+
 #afb{
   width: 90vw;
 
