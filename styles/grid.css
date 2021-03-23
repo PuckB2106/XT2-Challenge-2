@@ -7,7 +7,6 @@
  "klok-Amsterdam"
  "klok-London"
  "klok-NewYork"
- "animatie"
  "klok-Afbeelding";
 
 }
@@ -29,21 +28,15 @@
   grid-area: klok-NewYork;
 }
 
-.animatie{
-  grid-area: animatie;
-  display: flex;
-}
-
 .klok-Afbeelding{
   grid-area: klok-Afbeelding;
   display: flex;
 }
 
-#ani-afb{
-  justify-content: center;
-}
-
 #afb{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
   justify-content: center;
 }
 
@@ -58,7 +51,7 @@
     "logo-tekst logo-tekst"
     "klok-Amsterdam klok-London"
     "klok-NewYork klok-NewYork"
-    "animatie klok-Afbeelding";
+    "klok-Afbeelding klok-Afbeelding";
 
   }
 
@@ -70,16 +63,10 @@
     font-size: 25px;
   }
 
-  #ani-afb{
-    margin-top: 115%;
-    margin-left: 5%;
-  }
-
   #afb{
-    width: 500px;
-    height: 400px;
-    margin-left: 2%;
-    margin-top: 30%;
+    width: 40%;
+    margin-left: auto;
+    margin-top: auto;
   }
 
 /* kleine desktop */
@@ -89,59 +76,13 @@
 @media only screen and (min-width: 1279px){
  .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     grid-template-areas:
-    "logo-tekst logo-tekst logo-tekst"
-    "klok-Amsterdam klok-NewYork klok-London"
-    "animatie animatie animatie"
-    "klok-Afbeelding klok-Afbeelding klok-Afbeelding";
+    "logo-tekst logo-tekst"
+    "klok-Amsterdam klok-NewYork"
+    "klok-London klok-Afbeelding";
 
-
-  }
-
-  h2{
-    font-size: 50px;
-  }
-
-  p{
-    font-size: 25px;
-  }
-
-  #tijdA{
-  }
-
-  #tijdL{
-    font-size: 100px;
-  }
-
-  #tijdNY{
-    padding-top: 50px;
-  }
-
-  #ani-afb{
-    width: 20%;
-    margin-top: 10%;
-    margin-left: 75%;
-  }
-
-  #afb{
-    width: 40%;
-    margin-top: 0;
-    margin-left: 30%;
-  }
-
-}
-
-@media only screen and (min-width: 1920px){
- .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-
-    grid-template-areas:
-    "logo-tekst logo-tekst logo-tekst logo-tekst"
-    "klok-Amsterdam klok-Amsterdam klok-London klok-NewYork"
-    "animatie animatie klok-Afbeelding klok-Afbeelding";
 
   }
 
@@ -155,28 +96,65 @@
 
   #tijdA{
     font-size: 80px;
+    padding-top: 15%;
   }
 
   #tijdL{
-    padding-top: 25%;
+    font-size: 100px;
+    padding-top: 15%;
+  }
+
+  #tijdNY{
+    font-size: 100px;
+    padding-top: 15%;
+  }
+
+  #afb{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media only screen and (min-width: 1920px){
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-areas:
+    "logo-tekst logo-tekst logo-tekst"
+    "klok-Amsterdam klok-London klok-NewYork"
+    "klok-Afbeelding klok-Afbeelding klok-Afbeelding";
+
+  }
+
+  h2{
+    font-size: 100px;
+  }
+
+  p{
+    font-size: 50px;
+  }
+
+  #tijdA{
     font-size: 80px;
+  }
+
+  #tijdL{
+    font-size: 80px;
+    padding-top: 15%;
   }
 
   #tijdNY{
     font-size: 80px;
-    padding-top: 100px;
-  }
-
-  #ani-afb{
-    width: 20%;
-    margin-top: 52%;
-    margin-left: 15%;
+    padding-top: 15%;
   }
 
   #afb{
-    width: 500px;
-    margin-top: 15%;
-    margin-left: 25%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

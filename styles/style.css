@@ -55,20 +55,33 @@ body{
   padding: 10%;
 }
 
-#ani-afb {
-  width: 20%;
-	position: absolute;
-	top: 80px;
-  animation-fill-mode: forwards;
-	animation: 800ms bewegen infinite alternate ease-in;
+#afb{
+  animation: bewegen 30s infinite linear;
 }
 
 @keyframes bewegen {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#afb-mannetje {
+  width: 20%;
+	position: absolute;
+	top: 30px;
+  animation-fill-mode: forwards;
+	animation: 800ms springen infinite alternate ease-in;
+}
+
+@keyframes springen {
   0% {
   	top: 10px;
   }
 	100% {
-  	top: 30px;
+  	top: 35px;
   }
 }
 
